@@ -1,6 +1,13 @@
 # AWS EC2 Instance Terraform Variables
 # EC2 Instance Variables
 
+# Ec2 instance region
+variable "region" {
+  type        = string
+  description = "the instance region"
+  #default     = "us-east-1"
+}
+
 #AWS Instance AMI
 variable "ami" {
   type        = string
