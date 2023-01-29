@@ -22,6 +22,15 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
+
+#AWS instance key
+variable "key_name" {
+  type = string
+  description = "the instance key"
+  default = "key29"
+}
+
+
 #AWS ec2-tag
 variable "ec2-tag" {
   type        = string
@@ -43,10 +52,4 @@ variable "publicsubnetid" {
   #default     = "aws_subnet.publicsubnet"
 }
 
-#AWS instance key
-variable "key_name" {
-  type = string
-  description = "the instance key"
-  default = "key29"
-  
-}
+
