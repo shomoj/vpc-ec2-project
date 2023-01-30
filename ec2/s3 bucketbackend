@@ -1,0 +1,9 @@
+#Backend storage
+terraform {
+
+  backend "s3" {
+    bucket = "bootcamp29-1-shola"
+    key    = "global/terraform.tfstate"
+        #dynamodb_table = "terraform-lock"
+  }
+}
