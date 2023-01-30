@@ -10,7 +10,7 @@ resource "aws_instance" "ec2projdemo" {
   }
 }
 
-#create ec2-instance
+#create ec2-instance as a variable (to be used in module)
 resource "aws_instance" "ec2projdemo" {
   ami           = var.ami # us-east-1
   instance_type = var.instance_type
