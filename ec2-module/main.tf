@@ -1,4 +1,4 @@
-# complete variable files in module
+# complete resource (written as variable files) in module
 
 # Create vpc
 resource "aws_vpc" "firstvpc" {
