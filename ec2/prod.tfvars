@@ -1,3 +1,4 @@
+# EC2 Instance Variables for prod
 ami            = "ami-0b5eea76982371e91"
 instance_type  = "t2.micro"
 ec2-tag        = "prod-project1"
