@@ -1,3 +1,5 @@
+#variables for vpc
+
 variable "region" {
   type        = string
   description = "the instance region"
