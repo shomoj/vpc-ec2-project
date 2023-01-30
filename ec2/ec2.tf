@@ -1,12 +1,21 @@
 #EC2 instance -resource block
 
-resource "aws_instance" "proj1" {
+resource "aws_instance" "ec2projdemo" {
   ami           = "ami-0b5eea76982371e91" # us-east-1
   instance_type = "t2.micro"
-  subnet_id = "aws_subnet.privatesubnet"
-  key_name   = "key29"
+    key_name   = "key29"
   
   tags = {
-    "Name" = "project1"
+    "Name" = "ec2-tag"
+  }
+}
+
+#create ec2-instance
+resource "aws_instance" "ec2projdemo" {
+  ami           = var.ami # us-east-1
+  instance_type = var.instance_type
+  key_name = var.key_name
+  tags = {
+    "Name" = var.ec2-tag
   }
 }
