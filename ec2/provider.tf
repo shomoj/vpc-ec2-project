@@ -14,11 +14,4 @@ provider "aws" {
   profile = "sholade1"
 }
 
-#Backend storage
-backend "s3" {
-    bucket = "bootcamp29-1-shola"
-    key = "global/terraform.tfstate"
-    dynamodb_table = "terraform-lock"
-    region = "us-east-1"
-  }
-  
+
