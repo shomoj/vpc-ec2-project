@@ -14,4 +14,10 @@ provider "aws" {
   profile = "sholade1"
 }
 
+# Provider block as variable ( to be used with module)
+provider "aws" {
+  region  = var.region
+  profile = "sholade1"
+}
+
 
